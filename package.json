@@ -6,31 +6,47 @@
   "repository": "",
   "author": "",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
-    "standard": "standard"
+    "start": "next ./src -p 8080",
+    "standard": "standard",
+    "test": "jest"
   },
   "pre-commit": [
     "standard"
   ],
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "expect",
+      "jest",
+      "test"
+    ]
+  },
   "dependencies": {
+    "axios": "^0.18.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "jest": "^24.7.1",
+    "memoize-one": "^5.0.2",
+    "moment": "^2.24.0",
+    "next": "^8.0.4",
+    "prop-types": "^15.7.2",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.3.3",
-    "@babel/polyfill": "^7.2.5",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
-    "html-webpack-plugin": "^3.2.0",
+    "@babel/core": "^7.2.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.0.0",
+    "babel-plugin-inline-react-svg": "^1.0.1",
+    "babel-plugin-styled-components": "^1.10.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
     "pre-commit": "^1.2.2",
-    "standard": "^12.0.1",
-    "webpack": "^4.29.5",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.1.14"
+    "standard": "^12.0.1"
   }
 }
