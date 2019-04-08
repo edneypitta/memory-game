@@ -12,6 +12,7 @@ const Character = styled.div`
   flex: 1 1 auto;
   text-align: center;
   padding: 16px;
+  width: 200px;
 `
 
 export const CharacterButton = styled.button`
