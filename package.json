@@ -23,7 +23,7 @@
     ]
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "isomorphic-unfetch": "^3.0.0",
     "jest": "^24.7.1",
     "memoize-one": "^5.0.2",
